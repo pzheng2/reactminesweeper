@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://fb.me/react-0.13.3.js" charset="utf-8"></script>
+  <script src="https://fb.me/JSXTransformer-0.13.3.js" charset="utf-8"></script>
+  <script type="text/jsx" src="./tab.js"></script>
+
+</head>
+
+<body>
+  <div id="tabs">
+  </div>
+  <script type="text/jsx">
+
+    React.render(<Tab articles={[{title: "Space", content: "is awesome"}, {title: "Earth", content: "is pretty cool"},
+     {title: "Saturn", content: "is where its at"}]}/>, document.getElementById('tabs'));
+
+  </script>
+
+
+
+
+  </body>
+
+</html>
