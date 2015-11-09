@@ -1,0 +1,103 @@
+html, head, body, div, ul, li {
+
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+  font: inherit;
+  text-align: inherit;
+  background: transparent;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+group:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+ul {
+  list-style: none;
+  width: 400px;
+  height: 50px;
+}
+
+li {
+  display: block;
+  float: left;
+  width: 48px;
+  height: 48px;
+  background: gray;
+  border: 1px solid darkgray;
+}
+
+#minesweeper {
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding-top: 75px;
+}
+
+.tile {
+  display: block;
+  background: gray;
+  border-style: outset;
+}
+
+.bombed {
+  content: "B";
+}
+
+.revealed {
+  border-style: inset;
+}
+
+.flagged {
+  content: "F";
+}
+
+
+.modal {
+    display: none;
+  }
+  .modal.is-active {
+    display: block;
+  }
+  .modal-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .modal-content {
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 50px;
+    margin-left: -250px;
+    transform: translateY(-50%);
+    background: white;
+    border-radius: 5px;
+  }
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+  }
+  .modal-close:hover {
+    color: black;
+  }
